@@ -86,6 +86,7 @@ def look_for_55(array)
   end
 
   return counter
+  
 end
 
 p look_for_55([2,3,4,55,6,7,55])
