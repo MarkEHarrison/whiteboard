@@ -90,6 +90,23 @@ end
 
 p look_for_55([2,3,4,55,6,7,55])
 
+#6. Write a method that accepts an array of numbers and returns the sum of the numbers. For example, if the input is [1, 5, 7, 9, 2, 0], the output should be 24. Don’t use any of the built in “sum” methods that Ruby comes with.
+
+def sum_of(array)
+
+  sum = 0
+  index = 0
+
+  array.each do |number|
+    sum = array[index] + sum
+    index +=1
+  end
+
+  return sum
+end
+
+p sum_of([1,2,3,4,5,6,7])
+
 
 
 
