@@ -20,7 +20,7 @@ def every_other(array)
 
   50.times do
     array[index] = counter
-    index += 1
+    index +=1
     counter +=2
   end
 
