@@ -40,7 +40,7 @@ def divisible_by_3(array)
     if number <= 1000 && number % 3 == 0
       array << number
     end
-    index = index + 1
+    index +=1
     number +=1
   end
   p array
