@@ -1,3 +1,4 @@
+#Easy:
 #1. Write a method that returns an array of every number from 1 to 100.
 
 def every_number(array)
@@ -86,7 +87,7 @@ def look_for_55(array)
   end
 
   return counter
-  
+
 end
 
 p look_for_55([2,3,4,55,6,7,55])
@@ -108,7 +109,48 @@ end
 
 p sum_of([1,2,3,4,5,6,7])
 
+#Medium:
+#1. Write a method that accepts an array and returns it as a hash. For example, [“a”, “b”, “c] should turn into {0 => “a”, 1 => “b”, 2 => “c”}
 
+# def make_hash(array)
+#   hash1 = {}
+#   index = 0
+
+#   array.each do |item|
+#     hash1 << item.to_h
+#     index +=1
+#   end
+
+
+# end
+
+# p make_hash([1,2,3,4])
+
+#2 Write a method that accepts a string and returns whether it’s a palindrome. (without using the reverse method)
+
+def palindrome(string)
+
+new_array = []
+index = (string.length - 1)
+counter = 0
+
+  string.length.times do
+    new_array[counter] = string.slice(index)
+    index -= 1
+    counter +=1
+  end
+
+  new_array = new_array.sum("")
+
+  if new_array == string
+    puts "You've entered a word that is a palindrome!"
+  else
+    puts "Not a palindrome."
+  end
+  
+end
+
+puts palindrome("tacocat")
 
 
 
